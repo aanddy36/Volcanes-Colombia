@@ -278,6 +278,8 @@ let menu = document.querySelector(".options");
 let flecha = document.querySelector(".fa-chevron-down");
 let selectedDdmenu = document.querySelector(".selected-ddmenu");
 let comportamientoVolcan;
+let lastTog = document.querySelector(".last-tog i");
+let menuCards = document.querySelector("#menu-cards");
 
 const carta = document.querySelector("#card");
 const icono = document.querySelector(".titulo-volcano i");
@@ -518,13 +520,13 @@ window.addEventListener("load",()=>{
   });
 })
 
-
-/*btnVolcanes.forEach((boton)=>{
-  boton.addEventListener("click",()=>{
-    volcanes.forEach((e)=>{
-      if(e.nombre==boton.innerHTML){
-        console.log(e.nivelDeActividad);
-      }
-    });
-  })
-});*/
+lastTog.addEventListener("click",()=>{
+  if(menuCards.classList.contains("absolutize")){
+    menuCards.classList.remove("absolutize");
+    lastTog.style.transform = "rotate(0deg)";
+  }
+  else{
+    menuCards.classList.add("absolutize");
+    lastTog.style.transform = "rotate(180deg)";
+  }
+});

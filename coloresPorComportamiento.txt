@@ -1,0 +1,31 @@
+Green
+	fondo: rgb(116, 203, 72);
+	icono: rgb(0, 158, 21)
+	icono: <i class="fa-solid fa-circle-check"></i>
+	comportamiento: rgb(0, 158, 21)
+	info y titulos: rgb(116, 203, 72)
+	limite derecho: rgb(116, 203, 72)
+
+Yellow 
+	fondo: rgb(248, 236, 62)
+	icono: rgb(129, 117, 3);
+	icono: <i class="fa-solid fa-circle-question"></i>
+	comportamiento: rgb(129, 117, 3);
+	info y titulos: rgb(231, 220, 63);
+	limite derecho: rgb(231, 220, 63);
+
+Orange
+	fondo: rgb(255, 172, 77)
+	icono: rgb(129, 53, 3);
+	icono: <i class="fa-solid fa-circle-exclamation"></i>
+	comportamiento: rgb(129, 53, 3);
+	info y titulos: rgb(255, 172, 77);
+	limite derecho: rgb(255, 172, 77);
+
+Red
+	fondo: rgb(255, 77, 77);
+	icono: rgb(129, 3, 3);
+	icono: <i class="fa-solid fa-triangle-exclamation"></i>
+	comportamiento: rgb(129, 3, 3);
+	info y titulos: rgb(255, 77, 77);
+	limite derecho: rgb(255, 77, 77);

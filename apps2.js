@@ -277,6 +277,7 @@ let opciones = document.querySelector(".dropdown-menu");
 let menu = document.querySelector(".options");
 let flecha = document.querySelector(".fa-chevron-down");
 let selectedDdmenu = document.querySelector(".selected-ddmenu");
+let comportamientoVolcan;
 
 const carta = document.querySelector("#card");
 const icono = document.querySelector(".titulo-volcano i");
@@ -348,12 +349,12 @@ filtro.forEach((e)=>{
     }
     volcanesFiltrados = volcanesFiltrados.join("");
     segVolcanes.innerHTML = volcanesFiltrados;
-
-    let comportamientoVolcan;
+    /*AQUI*/
+    btnVolcanes = document.querySelectorAll(".btn");
     btnVolcanes.forEach((boton)=>{
-      boton.addEventListener("click",()=>{
+      boton.addEventListener("click",()=> {
         volcanes.forEach((e)=>{
-          if(e.nombre==boton.innerHTML){
+          if(e.nombre == boton.innerHTML){
             comportamientoVolcan = e.nivelDeActividad;
             tituloVolcan.innerHTML = e.nombre;
             comportamientoTitulo.innerHTML = e.nivelDeActividad;
@@ -424,8 +425,7 @@ filtro.forEach((e)=>{
               break;
           }
         });
-  
-      })
+      });
     });
   })
 });
@@ -439,7 +439,6 @@ window.addEventListener("load",()=>{
   segVolcanes.innerHTML = volcanesFiltrados;
   btnVolcanes = document.querySelectorAll(".btn");
 
-  let comportamientoVolcan;
   btnVolcanes.forEach((boton)=>{
     boton.addEventListener("click",()=>{
       volcanes.forEach((e)=>{
